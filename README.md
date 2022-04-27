@@ -54,5 +54,7 @@ Programming address
 Write new Image to Flash at user space and reboot
 
 1. flash_erase /dev/mtd3 0 48
+
 2. nandwrite /dev/mtd3 uImage_new -p
+
 3. reboot
