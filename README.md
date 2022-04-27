@@ -1,0 +1,1 @@
+# Linux_firmware_update_for_NUC980
