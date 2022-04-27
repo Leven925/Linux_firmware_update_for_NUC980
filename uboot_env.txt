@@ -8,7 +8,6 @@ image2_flash_offset=0x800000
 image_size=0x600000
 image1_ram_offset=0x7fc0
 image2_ram_offset=0x800000
-setspi=sf probe 0 30000000
 loadkernel1=nand read ${image1_ram_offset} ${image1_flash_offset} ${image_size}
 loadkernel2=nand read ${image2_ram_offset} ${image2_flash_offset} ${image_size}
 eraseflash=nand erase ${image1_flash_offset} ${image_size}
