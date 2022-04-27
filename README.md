@@ -49,6 +49,10 @@ Programming address
 
 4. uImage1 Data 0x200000
 
-5. uImage2 Data 0x800000
+5. rootfs.yaffs2 0x1400000
 
-6. rootfs.yaffs2 0x1400000
+Write new Image to Flash at user space and reboot
+
+1. flash_erase /dev/mtd3 0 48
+2. nandwrite /dev/mtd3 uImage_new -p
+3. reboot
