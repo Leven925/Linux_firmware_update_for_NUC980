@@ -25,7 +25,7 @@ Install Steps.
 
 4. Use uboot.txt as uboot environment
    
-   This will separate Flash to below
+   This will separate Flash to below partition
    
    partition 0 : 0x0-0x200000 (uboot)
    
@@ -37,7 +37,7 @@ Install Steps.
    
    This uboot environment will auto detect if Linux kernel 1 is the same as Linux kernel 2 , auto copy Linux kernel 2 to Linux kernel 1, boot from Linux kernel 1.
    
-Programming address
+Programming address :
 
    Image   Type   Address
 
@@ -45,7 +45,7 @@ Programming address
 
 2. u-boot.bin Data 0x100000
 
-3. uboot.txt Environment 0x80000
+3. uboot_env.txt Environment 0x80000
 
 4. uImage1 Data 0x200000
 
